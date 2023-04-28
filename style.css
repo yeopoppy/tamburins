@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0; padding: 0;}
+body,html{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: bottom;}
+address{font-style: normal;}
+span{
+    display: inline-block;
+}
+
+/* head */
+#wrap{width: 100%;min-width: 1500px;}
+#p{font-family: 'Arita-buri-SemiBold';}
+.boxalign{
+    width: 1500px; margin: auto;
+}
+header{
+    padding: 1.5rem 0;
+}
+header> .boxalign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    display: flex; gap: 5rem;
+    font-family: 'Arita-buri-SemiBold';
+    font-weight: 700;
+}
+header nav div{
+    border-bottom: 4px solid transparent;
+}
+header nav div a{
+    display: block; 
+    font-size: 1.2rem;
+    font-weight: bold; 
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;}
+header nav div:hover{
+    color: gray; 
+    border-bottom: 4px solid;
+}
+header .sidemenu{
+    display: flex;
+    gap: 15px;
+}
+/* main */
+main{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.mbg{
+    background: url(./s_pc_popup_mainHero.jpg) center;
+    width: 100%;
+    height: 850px;
+    background-size: cover;
+}
+.mtext{
+    background: #336633a6;
+    text-align: center;  
+    color: #fff;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    padding: 4.5rem;
+    /* padding-top: 100rem; */
+    transition: 0.7s;
+    font-family: 'Arita-buri-SemiBold';
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.mtext h2{
+    font-size: 2.25rem;
+    padding: 8rem 0 0;
+}
+.mtext span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 50%;
+    transition: 0.7s;
+}
+.mtext p{
+    font-size: 1.2rem;
+    margin: 10rem 0 6rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.mtext .date{
+    font-size: 1rem;
+    margin: 4rem 0 0;
+}
+.mtext a{
+    display: inline-block;
+    border: 1px solid;
+    border-color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 5rem;
+    transition: 0.7s; 
+    margin: 50px 0 0;
+    /* background: #000; */
+}
+main:hover .mbg{
+    /* transform: scale(1.2); */
+}
+main .mtext:hover{
+    /* left: 10%; */
+    padding: 5.5rem;
+}
+main .mtext:hover span{
+    background:#ffce00;
+    width: 176.44px;
+    border-radius: 0;
+    height: 3px;
+}
+main a:hover{
+    background: #000;
+    /* color: #ffcc00af; */
+}
+/* SECTION */
+section{
+    width: 350px;
+    margin: auto;
+}
+section ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+section ul li{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+section li.img1 span.textbox span{
+    /* background-size: 300px; */
+    width: 300px;
+    height: 300px;
+    background: url("./300_600_1.jpg");
+}
+section li.img1 span.textbox span:hover{
+    background-position: -300px 0;
+    transition: .7s;
+}
+section li.img2 span.textbox span{
+    /* background-size: 300px; */
+    width: 300px;
+    height: 300px;
+    background: url("./300_600_2.jpg");
+}
+section li.img2 span.textbox span:hover{
+    background-position: -300px 0;
+    transition: .7s;
+}
+
+section ul li:nth-child(3){
+    background: #ffce00;
+    text-align: center;
+    padding: 0rem 0rem 5rem;
+    text-align: left;
+}
+section ul li h3{
+    font-size: 2rem;
+    font-family: 'Arita-buri-SemiBold';
+    /* padding: 0rem 2rem 0rem; */
+    margin: 2.5rem 2rem 0rem;
+}
+section ul li > span{
+    display: block;
+    width: 1px;
+    height: 0px;
+    background: #000;
+    /* margin: 5rem 1rem; */
+}
+section ul li p{
+    font-size: 1.2rem;
+    letter-spacing: -1.5px;
+    line-height: 1.5;
+    font-family: 'Arita-buri-SemiBold';
+    padding: 0rem 2rem 0rem;
+/* } */}
+section ul li .middlep{
+    font-size: 1.7rem;
+    font-family: 'Arita-buri-SemiBold';
+    padding: 3rem 2rem 3rem;
+}
+section ul li a{}
+
+/* section span.imgbox img{} */
+
+section span.textbox strong{}
+section span.textbox span.whycover{}
+section span.textbox span.whycover.wcbg{}
+section span.textbox span.whycover i{}
+
+/* FOOTER */
+footer{
+    background: #ffce00;
+    border-color: grey;
+    margin: 10rem 0 0;
+    padding:5rem;
+    font-family: 'Arita-buri-SemiBold';
+}
+footer ul{
+    display: flex;
+    width: 534px;
+    margin: auto;
+    gap: 2rem;
+}
+footer ul li a{
+    display: block;
+    font-size: 1.1rem;
+}
+footer address{
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
